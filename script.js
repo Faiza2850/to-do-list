@@ -1,7 +1,7 @@
 const inputBox =document.getElementById("inputBox");
 const listContainer =document.getElementById("list-container");
 function addTask(){
-    if(inputBox.value === " "){
+    if(inputBox.value === ''){
         alert("You must write something");
     }
     else{
@@ -18,7 +18,7 @@ function addTask(){
 }
 listContainer.addEventListener("click", function(e){
     if(e.target.tagName === 'LI'){
-        e.target.clasList.toggle("checked");
+        e.target.classList.toggle("checked");
         saveData();
     }
     else if(e.target.tagName === 'SPAN'){
